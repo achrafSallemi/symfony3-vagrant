@@ -15,7 +15,7 @@ Vagrant.configure(2) do |config|
 
     config.vm.provision "shell", path: "dist/scripts/vagrant.sh"
 
-    config.vm.hostname = "foodlery"
+    config.vm.hostname = "symfony-vagrant"
     config.hostsupdater.aliases = [
         "my.site.com",
         "phpmyadmin.dev"
