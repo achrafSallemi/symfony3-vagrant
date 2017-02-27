@@ -1,0 +1,8 @@
+{
+  "name": "my-site",
+  "version": "0.0.1",
+  "dependencies": {
+    "tinymce": "4.5.3"
+  },
+  "private": true
+}

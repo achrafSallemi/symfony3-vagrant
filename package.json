@@ -1,0 +1,42 @@
+{
+  "name": "my-site",
+  "version": "1.0.0",
+  "description": "Empty symfony3 project",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0",
+    "css": "node-sass web/css/main.scss web/css/dist/style.css",
+    "css:watch": "npm run css -- --watch -r",
+    "js": "mkdir -p web/js/dist && browserify web/js/app.js -o web/js/dist/bundle.js",
+    "js:watch": "watchify web/js/app.js -d -o web/js/dist/bundle.js -v",
+    "watch": "npm-run-all --parallel *:watch",
+    "build": "npm run css && npm run js",
+    "postinstall": "node_modules/.bin/bower install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rocket-internet-berlin/INTCAT-COPS.git"
+  },
+  "author": "achraf-sallemi",
+  "license": "proprietary",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/rocket-internet-berlin/INTCAT-COPS/issues"
+  },
+  "homepage": "https://github.com/rocket-internet-berlin/INTCAT-COPS#readme",
+  "dependencies": {
+    "browserify": "^13.1.1",
+    "node-sass": "^3.10.1",
+    "jquery": "^2.2.1",
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1"
+  },
+  "devDependencies": {
+    "gulp-jshint": "^2.0.4",
+    "jshint": "^2.9.4",
+    "npm-run-all": "^3.1.1",
+    "watchify": "^3.7.0"
+  }
+}
