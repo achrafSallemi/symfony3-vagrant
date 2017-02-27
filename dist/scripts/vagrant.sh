@@ -38,7 +38,7 @@ cd /tmp && curl -O https://getcomposer.org/installer && php installer && mv comp
 ###################################################################
 apt-get install -y nginx
 root -c "echo '127.0.0.1 my.site.com' >> /etc/hosts"
-root -c "echo '127.0.0.1 phpmyadmin.com' >> /etc/hosts"
+root -c "echo '127.0.0.1 phpmyadmin.dev' >> /etc/hosts"
 
 rm /etc/nginx/sites-enabled/*
 rm /etc/nginx/nginx.conf
