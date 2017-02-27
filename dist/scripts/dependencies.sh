@@ -5,5 +5,5 @@
 ###################################################################
 echo -e "\n--- Installing composer packages && npm modules ---\n"
 cd /var/www/symfony-vagrant/
-composer install
+composer install --no-interaction
 npm install
