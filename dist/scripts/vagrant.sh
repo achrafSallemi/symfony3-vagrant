@@ -23,7 +23,7 @@ apt-get update > /dev/null 2>&1
 ###################################################################
 # php
 ###################################################################
-apt-get install -y --no-install-recommends php7.1 php7.1-fpm php7.1-cli php7.1-dev php7.1-curl php7.1-intl php7.1-mysql
+apt-get install -y --no-install-recommends php7.1 php7.1-fpm php7.1-cli php7.1-dev php7.1-xdebug php7.1-curl php7.1-intl php7.1-mysql
 ###################################################################
 # npm
 ###################################################################
@@ -68,7 +68,7 @@ ln -s /usr/share/phpmyadmin/ /var/www/phpmyadmin
 root -c "echo 'xdebug.remote_port = 9005' >> /etc/php/7.1/mods-available/xdebug.ini"
 root -c "echo 'xdebug.remote_enable = 1' >> /etc/php/7.1/mods-available/xdebug.ini"
 root -c "echo 'xdebug.remote_connect_back = 1' >> /etc/php/7.1/mods-available/xdebug.ini"
-root -c "echo 'xxdebug.idekey = "PHPSTORM"' >> /etc/php/7.1/mods-available/xdebug.ini"
+root -c "echo 'xdebug.idekey = "PHPSTORM"' >> /etc/php/7.1/mods-available/xdebug.ini"
 ###################################################################
 # restarting services
 ###################################################################
