@@ -8,7 +8,7 @@ sed -i '/tty/!s/mesg n/tty -s \\&\\& mesg n/' /root/.profile
 
 export DEBIAN_FRONTEND=noninteractive
 
-apt-get install -y language-pack-en
+apt-get install -y language-pack-en zip unzip
 locale-gen "en_US.UTF-8"
 dpkg-reconfigure locales
 update-locale LC_ALL="en_US.UTF-8" LANG="en_US.UTF-8" LC_CTYPE="en_US.UTF-8"
@@ -23,7 +23,7 @@ apt-get update > /dev/null 2>&1
 ###################################################################
 # php
 ###################################################################
-apt-get install -y --no-install-recommends php7.1 php7.1-fpm php7.1-cli php7.1-dev php7.1-xdebug php7.1-curl php7.1-intl php7.1-mysql
+apt-get install -y --no-install-recommends php7.1 php7.1-fpm php7.1-cli php7.1-dev php7.1-xdebug php7.1-curl php7.1-intl php7.1-mysql php7.1-xml php7.1-zip
 ###################################################################
 # npm
 ###################################################################
